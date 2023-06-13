@@ -1,0 +1,12 @@
+.tabs__container{
+    margin-right: 4px;
+
+    &__button{
+        background: none;
+        border: 3px solid red;
+        border-radius: 4px;
+        width: 80px;
+        height: 30px;
+        font-weight: 600;
+    }
+}
