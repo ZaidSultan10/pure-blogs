@@ -1,10 +1,13 @@
 import React from 'react'
 import '../../styles/headerStyles/_tabStyles.scss'
+import { useNavigate } from 'react-router-dom'
 
 const Tabs = ({title, link}) => {
 
+    const navigate = useNavigate()
+
     const handleTabRoute = () => {
-        console.log(link)
+        navigate(link)
     }
   return (
     <div className='tabs__container'>
