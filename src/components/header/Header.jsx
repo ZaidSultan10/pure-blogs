@@ -5,11 +5,13 @@ import moment from 'moment/moment'
 import Logo from '../../assets/logo.png'
 import Tabs from './Tabs'
 import { tabs } from './tabsData'
+import { useNavigate } from 'react-router-dom'
 
 const Header = () => {
 
     const [currentTime, setCurrentTime] = useState('')
     const clockFormat = moment().utcOffset("0").format("DD-MMM-YY")
+    let navigate = useNavigate()
 
     const updateTime = () => {
         setCurrentTime(moment().utcOffset("0").format("HH:mm:ss"))
@@ -20,7 +22,7 @@ const Header = () => {
   return (
     <div className='header__container'>
         <div className='header__container__left'>
-            <img src={Logo} alt='Logo' />
+            <img onClick={() => navigate('/')} src={Logo} alt='Logo' />
         </div>
         <div className='header__container__center'>
             <h3 className='header__container__center__time'>{currentTime}</h3>

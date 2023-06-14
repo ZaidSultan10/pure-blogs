@@ -7,7 +7,9 @@ const Tabs = ({title, link}) => {
     const navigate = useNavigate()
 
     const handleTabRoute = () => {
-        navigate(link)
+        if(link){
+            navigate(link)
+        }
     }
   return (
     <div className='tabs__container'>
