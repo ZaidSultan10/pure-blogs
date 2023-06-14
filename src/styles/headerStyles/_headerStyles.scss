@@ -5,7 +5,7 @@
     margin: 0 auto;
     padding: 0 7px;
     width: 100%;
-    box-shadow: 0px 1px 9px  red;
+    box-shadow: 0px 1px 5px  red;
     &__left{
          img{
              width: 100px;
@@ -14,12 +14,11 @@
          }
     }
     &__center{
-        border: 3px solid red;
+        background-color: white;
+        color: black;
         border-radius: 4px;
-        background: #ececec;
-        box-shadow: inset -5px -5px 9px rgba(255,255,255,0.45), inset 5px 5px 9px rgba(94,104,121,0.3);
+        border: 3px solid red;
         margin: 2px 0;
-        // padding: 2px 8px;
         width: 150px;
         height: 40px;
         display: flex;
@@ -52,6 +51,13 @@
             font-weight: 600;
             margin-right: 4px;
             cursor: pointer;
+
+            &:hover{
+                transition: 0.3s all ease-in-out;
+                background-color: red;
+                border: none;
+                color: white;
+            }
         }
     }
 }

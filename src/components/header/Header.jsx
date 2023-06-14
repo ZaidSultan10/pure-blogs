@@ -20,7 +20,7 @@ const Header = () => {
     setInterval(updateTime, 1000)
 
   return (
-    <div className='header__container'>
+    <section className='header__container'>
         <div className='header__container__left'>
             <img onClick={() => navigate('/')} src={Logo} alt='Logo' />
         </div>
@@ -36,7 +36,7 @@ const Header = () => {
                 ))
             }
         </div>
-    </div>
+    </section>
   )
 }
 
