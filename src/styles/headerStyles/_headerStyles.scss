@@ -6,6 +6,10 @@
     padding: 0 7px;
     width: 100%;
     box-shadow: 0px 1px 5px  red;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
     &__left{
          img{
              width: 100px;

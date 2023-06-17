@@ -4,7 +4,8 @@ export const tabs = [{
     link:'/about'
 },{
     tabId: 2,
-    tabName: "Contact"
+    tabName: "Contact",
+    alias: "ContactUs"
 },{
     tabId: 3,
     tabName: "Pricing",

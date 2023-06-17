@@ -17,4 +17,24 @@
             color: white;
         }
     }
+    &__hashLink{
+        background: none;
+        border: 3px solid red;
+        border-radius: 4px;
+        width: 80px;
+        height: 30px;
+        font-weight: 600;
+        cursor: pointer;
+        text-decoration: none;
+        color: black;
+        padding: 4.05px 8px;
+        font-size: 14px;
+
+        &:hover{
+            transition: 0.3s all ease-in-out;
+            background-color: red;
+            border: none;
+            color: white;
+        }
+    }
 }

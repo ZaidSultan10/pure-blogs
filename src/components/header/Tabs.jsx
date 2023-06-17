@@ -1,8 +1,9 @@
 import React from 'react'
 import '../../styles/headerStyles/_tabStyles.scss'
 import { useNavigate } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 
-const Tabs = ({title, link}) => {
+const Tabs = ({title, link, alias}) => {
 
     const navigate = useNavigate()
 
@@ -13,7 +14,7 @@ const Tabs = ({title, link}) => {
     }
   return (
     <div className='tabs__container'>
-        <button className='tabs__container__button' onClick={handleTabRoute}>{title}</button>
+        {link ? (<button className='tabs__container__button' onClick={handleTabRoute}>{title}</button>) : (alias && (<HashLink className='tabs__container__hashLink' to={`/#${alias}`} smooth>{title}</HashLink>))}
     </div>
   )
 }

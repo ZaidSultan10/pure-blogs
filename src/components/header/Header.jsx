@@ -32,7 +32,7 @@ const Header = () => {
             <button className='header__container__right__darkmode'>toggle</button>
             {
                 tabs && tabs.length > 0 && tabs.map(tab => (
-                    <Tabs key={tab.tabId} title={tab.tabName} link={tab.link} />
+                    <Tabs key={tab.tabId} title={tab.tabName} link={tab.link} alias = {tab.alias} />
                 ))
             }
         </div>
