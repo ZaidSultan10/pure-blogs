@@ -4,4 +4,21 @@
     width: 100%;
     margin:  0 auto;
     background-color: bisque;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    &__blogPost{
+        // display: flex;
+        // justify-content: space-around;
+        // align-items: center;
+        // flex-wrap: wrap;
+
+        &__image{
+            border: 1px solid;
+            height: 80px;
+            width: 90px;
+            border-radius: 8px;
+        }
+    }
 }
